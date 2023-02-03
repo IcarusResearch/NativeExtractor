@@ -9,10 +9,11 @@
 
 #include "Errors.h"
 
-// Only tested on 1.0.2802.0
+// Only tested on 1.0.2802.0 & 1.0.2824
 static LPCTSTR szTableSig = _T("E8 ?? ?? ?? ?? 48 8B D8 48 8D 05 ?? ?? ?? ?? 48 89 ?? 48 8D");
 static LPCTSTR szSysTableSig = _T("53 48 83 EC ?? 48 8D 1D ?? ?? ?? ?? 4C");
-static LPCTSTR szFuncRegNativeSig = _T("E9 82 39 CA 01");
+// Will only work on 1.0.2824
+static LPCTSTR szFuncRegNativeSig = _T("E9 D5 FA DD 01");
 static UINT uTableSize = 0x2AE;
 
 BOOL FileExists(LPCTSTR szFile) {

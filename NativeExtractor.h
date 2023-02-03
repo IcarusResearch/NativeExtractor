@@ -8,7 +8,7 @@
 namespace NativeExtractor {
 
 	//TODO get dynamic
-	static std::basic_string<TCHAR> TARGET_BUILD_VERSION = _T("1.0.2802.0");
+	static std::basic_string<TCHAR> TARGET_BUILD_VERSION = _T("1.0.2824.0");
 
 	class HashExtractor final {
 
