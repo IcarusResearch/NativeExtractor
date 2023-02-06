@@ -161,7 +161,7 @@ DWORD NativeExtractor::HashExtractor::Extract(PBYTE pData, UINT uSize, ULONG_PTR
 	PBYTE pTableStart = vecTableVA[0];
 	UINT uNamespaces = 1;
 	std::vector<ULONG_PTR> vecHashes = HandleNamespace(vecSysTableVA[0], pBase, (ULONG_PTR)vecSysTableVA[0] + 0x291);
-	out << "[Namespace System (" << std::dec << vecHashes.size() << " natives)]\n";
+	out << "[Namespace 0 (" << std::dec << vecHashes.size() << " natives)]\n";
 	for (auto& hash : vecHashes) {
 		out << std::hex << std::setw(16) << std::setfill('0') << std::uppercase << hash << "\n";
 	}
